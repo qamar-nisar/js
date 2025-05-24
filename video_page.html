@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        video {
+            max-width: 100%;
+            border: 1px solid #ccc;
+        }
+        #playPauseBtn {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #commentsSection {
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Awesome Video</h1>
+    <video id="myVideo" controls width="600">
+        <!-- Placeholder video source -->
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>This is a description of my awesome video.</p>
+    <button id="playPauseBtn">Play</button>
+    <div id="commentsSection">
+        <h2>Comments</h2>
+        <p>No comments yet.</p>
+    </div>
+    <script src="video_player.js" defer></script>
+</body>
+</html>
